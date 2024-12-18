@@ -1,0 +1,48 @@
+# English translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-18 21:26+0200\n"
+"PO-Revision-Date: 2024-12-18 21:26+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: app/routes/users.py:10
+msgid "Get authorized user"
+msgstr ""
+
+#: app/routes/users.py:16
+msgid "Update authorized user"
+msgstr ""
+
+#: app/routes/users.py:22
+msgid "Delete authorized user"
+msgstr ""
+
+#: app/routes/users.py:28
+msgid "Authorize user"
+msgstr ""
+
+#: app/routes/users.py:34
+msgid "Register new user"
+msgstr ""
+
+#: app/routes/users.py:40
+msgid "Update user's profile picture"
+msgstr ""
+
+#: app/routes/users.py:46
+msgid "Delete user's profile picture"
+msgstr ""
+
