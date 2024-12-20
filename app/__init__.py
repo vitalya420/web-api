@@ -1,7 +1,9 @@
 import os
 from sanic import Sanic, text
 
-app = Sanic("MyFuckingApp")
+from .request import AppRequest
+
+app = Sanic("MyFuckingApp", request_class=AppRequest)
 
 locales_dir = os.path.join(os.getcwd(), "locales")
 

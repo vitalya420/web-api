@@ -1,5 +1,8 @@
 from sanic import Blueprint, Request, json
 
+from app.request import AppRequest
+from app.services.user_service import UserService
+
 
 users_bp = Blueprint("users", "/users")
 
@@ -44,3 +47,11 @@ async def update_profile_picture(request: Request):
 async def delete_profile_picture(request: Request):
     _ = request.ctx.t
     return json({"success": True, "message": _("Delete user's profile picture")})
+
+
+@users_bp.get("/<user_id_or_phone>")
+async def get_user_by_id(request: AppRequest, user_id: str):
+    user = UserService(request.ctx.session_factory).get_user(
+        int(user_id) if user_id.isdigit() else user_id, raise_404=True
+    )
+    return json({"success": True, "message": "User found!"})
